@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: 'Reddit Medium';
+    src: url(/fonts/RedditMono-Medium.ttf);
+}
+@font-face {
+    font-family: 'Name Font';
+    src: url(/fonts/VT323-Regular.ttf);
+}
+
+
+    body {
+    margin: 0;
+    font-family: 'Reddit Medium', sans-serif;
+    background-color:  #ECE1D5;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000; /* Чтобы навигационная панель была над всеми элементами */
+    border: 1px solid grey;
+  }
+
+  #myName {
+    margin-left: 50px;
+    font-size: 24px;
+    font-family: "Name Font";
+    color: black; 
+    text-align: center;
+    align-self: center;
+    transition: color 0.6s;
+    
+  }
+  .navbar #myName:hover {
+    color: #DF5F24;
+   
+  }
+
+  .navbar a {
+  display: block;
+  background-color: white;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.6s;
+    transition: background-color 0.6s;
+  }
+
+  .navbar a:hover {
+    background-color:  #DF5F24;  
+    color: white;
+  }
+  /* Для примера контента страницы */
+  .content{
+    display: flex;
+    flex-direction: row;
+    
+    margin:150px;
+    border-bottom: 1px grey solid;
+  }
+  .skill{
+    margin-left:150px;
+   
+  }
+  .project{
+    
+    margin:150px;
+    border-top: 1px grey solid;
+  }
+  .contact{
+    margin:150px;
+    border-top: 1px grey solid;
+  }
+  
+
+
+  #portrait {
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 50%;
+    transition: border 0.6s;
+    justify-self: end;
+  }
+    #portrait:hover{
+    border: 3px solid #DF5F24
+    }
+
+
+  .skillsIcons {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+ 
+  .gitIcon {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+ 
+  .smmIcons {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+ 
