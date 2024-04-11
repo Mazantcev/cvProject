@@ -1,0 +1,197 @@
+
+@font-face {
+    font-family: 'Reddit Medium';
+    src: url(/fonts/RedditMono-Medium.ttf);
+}
+@font-face {
+    font-family: 'Name Font';
+    src: url(/fonts/VT323-Regular.ttf);
+}
+
+/* Медиа-запросы */
+  /* Мобильные устройства (от 0px до 767px) */
+  @media only screen and (max-width: 767px) {
+    body {
+     max-width: 767px;
+    }
+    .content{
+      font-size: 16px;
+      
+    }
+    #portrait{
+      width: 150px;
+      height: 150px;
+      
+
+  }
+    #portrait:hover {
+    border: 3px solid #DF5F24
+    
+    }
+    .skillsIcons img{
+      margin: 10px;
+    }
+
+  }
+
+  /* Планшеты (от 768px до 991px) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+      max-width: 991px;
+    }
+    .content{
+      font-size: 18px;
+      
+    }
+    
+  }
+
+  /* ПК (ширина экрана больше 992px) */
+  @media only screen and (min-width: 992px) {
+    body{
+      max-width: 1600px;
+    }
+    .content{
+      font-size: 20px;
+      
+    }
+  }
+
+  main{
+   
+  }
+* {
+  /* border: 2px solid red; */
+}
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Reddit Medium', sans-serif;
+    background-color:  #ECE1D5;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000; /* Чтобы навигационная панель была над всеми элементами */
+    border: 1px solid grey;
+  }
+
+  #myName {
+    margin-left: 50px;
+    font-size: 24px;
+    font-family: "Name Font";
+    color: black; 
+    text-align: center;
+    align-self: center;
+    transition: color 0.6s;
+    
+  }
+  .navbar #myName:hover {
+    color: #DF5F24;
+    cursor: pointer;
+   
+  }
+
+  .navbar a {
+  display: block;
+  background-color: white;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 0.6s;
+    transition: background-color 0.6s;
+  }
+
+  .navbar a:hover {
+    background-color:  #DF5F24;  
+    color: white;
+  }
+  /* Для примера контента страницы */
+  .content{
+    width: 80%;
+    display: flex;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    margin:150px 150px 0px 150px;
+    
+  }
+
+ .textAboutMe{
+  min-width: 300px;
+
+
+ }
+
+  .skill{
+    text-align: center;
+    margin:150px;
+  }
+  .project{
+    text-align: center;
+    margin:150px;
+   
+  }
+  .contact{
+    text-align: center;
+    margin:150px;
+  }
+ 
+  
+  #portrait {
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 50%;
+    transition: border 0.6s;
+    align-self: center;
+  }
+    #portrait:hover {
+    border: 3px solid #DF5F24
+    
+    }
+
+
+  .skillsIcons {
+    margin-top: 40px;
+    height: 100px;
+    width: 100%;
+    display:none;
+    justify-content: space-around;
+  }
+ 
+  #gitLogo {
+     width: 150px;
+     height: 150px;
+    justify-content: center;
+  }
+
+ 
+ 
+  .smmIcons img {
+    height: 100px;
+    
+    
+  }
+ 
+  #skillButton{
+width: 100px;
+height: 30px;
+background-color: white;
+color: black;
+
+  }
+ 
+  #skillButton:hover{
+    background-color: #DF5F24;
+    color: white;
+  }
